@@ -158,6 +158,59 @@ window.PROJECTS = [
         } },
     ],
   },
+  {
+    slug: 'sportshot',
+    category: 'branding',
+    layout: 'case',
+    title: 'Sportshot',
+    client: 'Sportshot',
+    year: '2026',
+    role: ROLE_FULL,
+    images: [
+      { src: 'images/branding/sportshot/logotipo.jpg', ratio: '16/9' },
+      // Presentación de identidad visual
+      { src: 'images/branding/sportshot/portada.jpg', ratio: '16/9', cls: 'cp__pair-a',
+        chapter: { es: 'Presentación de identidad visual', en: 'Visual identity presentation' } },
+      { src: 'images/branding/sportshot/indice.jpg', ratio: '16/9', cls: 'cp__pair-b' },
+      { src: 'images/branding/sportshot/quienes-somos.jpg', ratio: '16/9',
+        label: { es: 'Punto de partida', en: 'Starting point' },
+        caption: {
+          es: 'Partí de entender quién es Sportshot: una empresa familiar uruguaya con diez años de oficio que da el salto a la importación de equipamiento de caza y tiro de precisión. Su diferencial es el asesoramiento de quien practica, y ese respaldo humano fue la base de toda la identidad.',
+          en: 'I started by understanding who Sportshot is: a Uruguayan family business with ten years of experience that is stepping into importing hunting and precision shooting equipment. Its edge is advice from people who actually practise, and that human backing became the foundation of the whole identity.',
+        } },
+      { src: 'images/branding/sportshot/aplicacion-principal.jpg', ratio: '16/9',
+        label: { es: 'Aplicación', en: 'Application' },
+        caption: {
+          es: 'Llevé la identidad a una primera aplicación: el producto en primer plano, un titular en mayúsculas en Gancode Mono y la retícula como recurso para dirigir la mirada.',
+          en: 'I took the identity into a first application: the product up front, an uppercase headline in Gancode Mono and the reticle as the device that guides the eye.',
+        } },
+      { src: 'images/branding/sportshot/papeleria.jpg', ratio: '16/9',
+        label: { es: 'Papelería', en: 'Stationery' },
+        caption: {
+          es: 'Apliqué el degradé y el logotipo a la papelería: cuadernos y tarjetas donde la marca se vuelve un objeto, sobria y reconocible.',
+          en: 'I applied the gradient and the logotype to the stationery: notebooks and business cards where the brand becomes an object, sober and recognisable.',
+        } },
+      { src: 'images/branding/sportshot/web.jpg', ratio: '16/9',
+        label: { es: 'Web', en: 'Web' },
+        caption: {
+          es: 'Llevé el sistema a la web: una home con hero oscuro y secciones claras, el producto como protagonista y los recursos de precisión ordenando la información.',
+          en: 'I brought the system to the web: a home page with a dark hero and light sections, the product as the protagonist and the precision devices organising the information.',
+        } },
+      // Manual de marca: las láminas juntas, como un documento
+      { src: 'images/branding/sportshot/objetivo-comunicacion.jpg', ratio: '16/9', cls: 'cp__slide cp__slide--full',
+        chapter: { es: 'Manual de marca', en: 'Brand manual' },
+        chapterText: {
+          es: 'Armé el manual de marca para ordenar cómo se comunica y cómo se ve Sportshot: primero la estrategia, con el objetivo y los momentos de comunicación, y después el sistema visual, con la paleta, el degradé y la tipografía.',
+          en: 'I put together the brand manual to set out how Sportshot communicates and how it looks: first the strategy, with the communication goal and moments, and then the visual system, with the palette, the gradient and the typography.',
+        } },
+      { src: 'images/branding/sportshot/momentos-comunicacion.jpg', ratio: '16/9', cls: 'cp__slide' },
+      { src: 'images/branding/sportshot/zafra-del-jabali.jpg', ratio: '16/9', cls: 'cp__slide' },
+      { src: 'images/branding/sportshot/paleta.jpg', ratio: '16/9', cls: 'cp__slide' },
+      { src: 'images/branding/sportshot/degrade.jpg', ratio: '16/9', cls: 'cp__slide' },
+      { src: 'images/branding/sportshot/tipografia-gancode-mono.jpg', ratio: '16/9', cls: 'cp__slide' },
+      { src: 'images/branding/sportshot/tipografia-ibm-plex-sans.jpg', ratio: '16/9', cls: 'cp__slide' },
+    ],
+  },
 
   // ---------- Papelería (by piece, no client names) ----------
   {
@@ -185,15 +238,27 @@ window.PROJECTS = [
     images: [{ src: 'images/flyer/sls-polo.jpg', ratio: '3/2' }, null, null, null],
   },
   {
-    slug: 'carteleria',
+    slug: 'cartel',
     category: 'papeleria',
     layout: 'piece',
-    title: { es: 'Cartelería', en: 'Signage' },
+    title: { es: 'Cartel', en: 'Billboard' },
     format: { es: 'Cartel de vía pública · impreso', en: 'Outdoor billboard · print' },
     context: {
-      es: 'Cartel de vía pública para un barrio residencial en Paysandú. Un recorte curvo divide la pieza entre la vista aérea del proyecto y la información: un titular en serif, tres beneficios con íconos y los datos de contacto, pensados para leerse de un vistazo y a distancia.',
-      en: 'Outdoor billboard for a residential neighbourhood in Paysandú. A curved cut divides the piece between the aerial view of the project and the information: a serif headline, three benefits with icons and contact details, designed to be read at a glance and from a distance.',
+      es: 'Diseñé un cartel de vía pública para un proyecto residencial en Paysandú. Usé un recorte curvo para dividir la composición entre la vista aérea del desarrollo y los elementos informativos: un headline en serif, tres beneficios con iconografía propia y contacto, pensados para leerse de un vistazo y desde la distancia.',
+      en: 'I designed an outdoor billboard for a residential project in Paysandú. I used a curved cut to divide the composition between the aerial view of the development and the information elements: a serif headline, three benefits with custom iconography and contact details, designed to be read at a glance and from a distance.',
     },
-    images: [{ src: 'images/carteleria/cartel-via-publica.webp', ratio: '1672/941' }, null, null, null],
+    images: [{ src: 'images/papeleria/cartel-residencial.webp', ratio: '3/2' }, null, null, null],
+  },
+  {
+    slug: 'catalogo',
+    category: 'papeleria',
+    layout: 'piece',
+    title: { es: 'Catálogo', en: 'Catalog' },
+    format: { es: 'Catálogo de producto · impreso', en: 'Product catalog · print' },
+    context: {
+      es: 'Realicé un catálogo técnico para sistemas de energía solar. Organicé la información en dos secciones principales que presentan cada sistema con especificaciones claras, visualización del producto y detalles de instalación, manteniendo un equilibrio entre la estética y la claridad de datos.',
+      en: 'I created a technical catalog for solar energy systems. I organized the information into two main sections presenting each system with clear specifications, product visualization and installation details, maintaining a balance between aesthetics and data clarity.',
+    },
+    images: [{ src: 'images/papeleria/catalogo-energia.webp', ratio: '3/2' }, null, null, null],
   },
 ];

@@ -32,6 +32,9 @@
   // composition; further images are laid out as a staggered side-by-side pair.
   const GALLERY = [['cp__g1', '4/3'], ['cp__g2', '3/4'], ['cp__g3', '16/9']];
   const MORE = ['cp__g4', 'cp__g5'];
+  const chapterHead = (img) => (img.chapter
+    ? `<h3 class="cp__chapter t-l" data-reveal="fade">${L(img.chapter)}</h3>${img.chapterText ? `<p class="cp__chapter-text t-s" data-reveal="fade">${L(img.chapterText)}</p>` : ''}`
+    : '');
   const gallery = (p) => {
     const extras = p.images.slice(1);
     if (!extras.some(Boolean)) return '';
@@ -41,7 +44,7 @@
       if (img && img.caption) {
         const alt = features++ % 2 === 1;
         const tall = img.ratio && (() => { const [w, h] = img.ratio.split('/').map(Number); return h > w; })();
-        return `${img.chapter ? `<h3 class="cp__chapter t-l" data-reveal="fade">${L(img.chapter)}</h3>` : ''}
+        return `${chapterHead(img)}
         <div class="cp__feature ${alt ? 'is-alt' : ''} ${tall ? 'is-tall' : ''}">
           ${slot(img, i + 2, img.ratio || '16/9', 'cp__feature-fig', p)}
           <div class="cp__feature-text" data-reveal="fade">
@@ -50,7 +53,7 @@
           </div>
         </div>`;
       }
-      if (img && img.cls) return slot(img, i + 2, img.ratio || '16/9', img.cls, p);
+      if (img && img.cls) return chapterHead(img) + slot(img, i + 2, img.ratio || '16/9', img.cls, p);
       const [cls, ratio] = GALLERY[i] || [MORE[(i - GALLERY.length) % MORE.length], '16/9'];
       return slot(img, i + 2, ratio, cls, p);
     }).join('')}</div>`;
