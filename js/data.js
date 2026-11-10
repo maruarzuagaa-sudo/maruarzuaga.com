@@ -165,9 +165,10 @@ window.PROJECTS = [
     title: 'Sportshot',
     client: 'Sportshot',
     year: '2026',
+    compact: true,
     role: ROLE_FULL,
     images: [
-      { src: 'images/branding/sportshot/logotipo.jpg', ratio: '16/9' },
+      { src: 'images/branding/sportshot/logotipo-degrade.jpg', ratio: '16/9' },
       // Presentación de identidad visual
       { src: 'images/branding/sportshot/portada.jpg', ratio: '16/9', cls: 'cp__pair-a',
         chapter: { es: 'Presentación de identidad visual', en: 'Visual identity presentation' } },
@@ -196,19 +197,20 @@ window.PROJECTS = [
           es: 'Llevé el sistema a la web: una home con hero oscuro y secciones claras, el producto como protagonista y los recursos de precisión ordenando la información.',
           en: 'I brought the system to the web: a home page with a dark hero and light sections, the product as the protagonist and the precision devices organising the information.',
         } },
-      // Manual de marca: las láminas juntas, como un documento
-      { src: 'images/branding/sportshot/objetivo-comunicacion.jpg', ratio: '16/9', cls: 'cp__slide cp__slide--full',
+      // Manual de marca: las láminas juntas, de a dos, como un documento
+      { src: 'images/branding/sportshot/manual-portada.jpg', ratio: '16/9', cls: 'cp__slide cp__slide--l',
         chapter: { es: 'Manual de marca', en: 'Brand manual' },
         chapterText: {
           es: 'Armé el manual de marca para ordenar cómo se comunica y cómo se ve Sportshot: primero la estrategia, con el objetivo y los momentos de comunicación, y después el sistema visual, con la paleta, el degradé y la tipografía.',
           en: 'I put together the brand manual to set out how Sportshot communicates and how it looks: first the strategy, with the communication goal and moments, and then the visual system, with the palette, the gradient and the typography.',
         } },
-      { src: 'images/branding/sportshot/momentos-comunicacion.jpg', ratio: '16/9', cls: 'cp__slide' },
-      { src: 'images/branding/sportshot/zafra-del-jabali.jpg', ratio: '16/9', cls: 'cp__slide' },
-      { src: 'images/branding/sportshot/paleta.jpg', ratio: '16/9', cls: 'cp__slide' },
-      { src: 'images/branding/sportshot/degrade.jpg', ratio: '16/9', cls: 'cp__slide' },
-      { src: 'images/branding/sportshot/tipografia-gancode-mono.jpg', ratio: '16/9', cls: 'cp__slide' },
-      { src: 'images/branding/sportshot/tipografia-ibm-plex-sans.jpg', ratio: '16/9', cls: 'cp__slide' },
+      { src: 'images/branding/sportshot/objetivo-comunicacion.jpg', ratio: '16/9', cls: 'cp__slide cp__slide--r' },
+      { src: 'images/branding/sportshot/momentos-comunicacion.jpg', ratio: '16/9', cls: 'cp__slide cp__slide--l' },
+      { src: 'images/branding/sportshot/zafra-del-jabali.jpg', ratio: '16/9', cls: 'cp__slide cp__slide--r' },
+      { src: 'images/branding/sportshot/paleta.jpg', ratio: '16/9', cls: 'cp__slide cp__slide--l' },
+      { src: 'images/branding/sportshot/degrade.jpg', ratio: '16/9', cls: 'cp__slide cp__slide--r' },
+      { src: 'images/branding/sportshot/tipografia-gancode-mono.jpg', ratio: '16/9', cls: 'cp__slide cp__slide--l' },
+      { src: 'images/branding/sportshot/tipografia-ibm-plex-sans.jpg', ratio: '16/9', cls: 'cp__slide cp__slide--r' },
     ],
   },
 

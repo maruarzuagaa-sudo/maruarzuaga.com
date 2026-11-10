@@ -126,7 +126,7 @@
   };
 
   const chapter = (p, i) => `
-    <article class="cp cp--${p.layout}" id="${p.slug}">
+    <article class="cp cp--${p.layout}${p.compact ? ' cp--compact' : ''}" id="${p.slug}">
       ${head(p, i)}
       ${LAYOUTS[p.layout](p)}
     </article>`;
